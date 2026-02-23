@@ -6,6 +6,8 @@ Scan security headers on any website -- CSP, HSTS, X-Frame-Options, and more -- 
 
 **Live Demo:** [https://security-scanner.spider.cloud](https://security-scanner.spider.cloud)
 
+![Spider Security Scanner](./example.png)
+
 ## Features
 
 - 10 security header checks: HSTS, CSP, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy, X-XSS-Protection, COOP, CORP, HTTPS
