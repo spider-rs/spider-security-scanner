@@ -31,7 +31,35 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className="dark">
-      <body className={inter.className}>{children}<Analytics /></body>
+      <body className={inter.className}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              name: "Spider Security Scanner",
+              url: "https://security-scanner.spider.cloud",
+              description:
+                "Scan HTTP security headers on any website. Check CSP, HSTS, X-Frame-Options, and more.",
+              applicationCategory: "WebApplication",
+              operatingSystem: "Any",
+              offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "USD",
+              },
+              author: {
+                "@type": "Organization",
+                name: "Spider",
+                url: "https://spider.cloud",
+              },
+            }),
+          }}
+        />
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
