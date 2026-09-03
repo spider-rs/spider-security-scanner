@@ -289,7 +289,7 @@ export default function Scanner() {
         {!data ? (
           <div className="flex flex-col items-center justify-center h-full gap-4 text-center px-4 py-20">
             <svg height={48} width={48} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="fill-[#3bde77]/30">
-              <path fillRule="evenodd" clipRule="evenodd" d="M1.5 1.5H7.5V7.5H1.5zM16.5 1.5H22.5V7.5H16.5zM1.5 16.5H7.5V22.5H1.5zM16.5 16.5H22.5V22.5H16.5zM7.5 3H16.5V6H7.5zM3 7.5H6V16.5H3zM7.5 6H8.25L18.75 16.5H16.5V18.75L6 8.25V7.5H7.5z" />
+              <path fillRule="evenodd" clipRule="evenodd" d="M20.646 5.196A2.25 2.25 0 0 0 17.199 2.304L15.447 4.391A4.5 4.5 0 0 1 8.553 4.391L6.801 2.304A2.25 2.25 0 0 0 3.354 5.196L8.697 11.564A4.5 4.5 0 0 1 9.75 14.457L9.75 20.25A2.25 2.25 0 0 0 14.25 20.25L14.25 14.457A4.5 4.5 0 0 1 15.303 11.564L20.646 5.196Z" />
             </svg>
             <h2 className="text-xl font-bold">Spider Security Scanner</h2>
             <p className="text-muted-foreground max-w-md">
